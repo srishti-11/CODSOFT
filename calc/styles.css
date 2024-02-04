@@ -1,0 +1,41 @@
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 300px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.button {
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.result {
+    grid-column: span 4;
+    text-align: right;
+    padding: 8px;
+    font-size: 1.5em;
+}
+
+/* Apply styles to buttons */
+button {
+    grid-column: span 1;
+}
+
+/* Apply specific styles to the '=' button */
+button:nth-child(16) {
+    grid-column: span 2;
+}
+
+/* Apply styles to the result display */
+#result {
+    grid-column: span 4;
+}
